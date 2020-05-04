@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pnl_relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.rgbapp.MainActivity">
+
+    <SeekBar
+        android:id="@+id/red_seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:max="255" />
+
+    <SeekBar
+        android:id="@+id/green_seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/red_seekBar"
+        android:layout_marginTop="16dp"
+        android:max="255" />
+
+    <SeekBar
+        android:id="@+id/blue_seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/green_seekBar"
+        android:layout_marginTop="17dp"
+        android:max="255" />
+
+    <TextView
+        android:id="@+id/txt_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/blue_seekBar"
+        android:layout_marginTop="42dp"
+        android:text="R:"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txt_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt_red"
+        android:layout_marginTop="14dp"
+        android:text="G:"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txt_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt_green"
+        android:layout_marginTop="12dp"
+        android:text="B:"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_degistir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:text="Arka Plan Rengi"
+        android:layout_alignBottom="@+id/txt_red"
+        android:layout_toLeftOf="@+id/btn_kaydet"
+        android:layout_toStartOf="@+id/btn_kaydet" />
+
+    <Button
+        android:id="@+id/btn_kaydet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_degistir"
+        android:layout_alignBottom="@+id/btn_degistir"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Kaydet" />
+
+    <Button
+        android:id="@+id/btn_sıfırla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_kaydet"
+        android:layout_alignRight="@+id/btn_kaydet"
+        android:layout_alignTop="@+id/txt_green"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
+        android:text="Sıfırla" />
+</RelativeLayout>
